@@ -42,7 +42,7 @@ var formEl = document.getElementsByClassName('form');
 function removeClass(el) {
   console.log('removeclass',formEl[0].classList);
   console.log('el',el.nextElementSibling);
-  el.nextElementSibling.classList.remove('hidden');
+  el.nextElementSibling.classList.toggle('hidden');
 }
 
 var commentEl = document.getElementsByClassName('comment');
@@ -58,5 +58,6 @@ for (var i = 0; i < commentEl.length; i++){
 
 
 /* Hide Comments
-When view comments is visible add style visibility: hidden or add class hidden to the form element Remove Class Open
+When view comments is visible add style visibility: hidden or add class hidden to the form element
+Add Class Hidden
 */
