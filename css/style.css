@@ -1,0 +1,96 @@
+/*General Styles*/
+
+header h1{
+  text-align: center;
+}
+
+button{
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.hidden{
+  display: none;
+}
+
+.open{
+  display: block;
+}
+
+.overlay{
+  background-color: orange;
+  border: 1px solid red;
+}
+
+.submit-comment{
+  background-color: grey;
+  border: 1px solid #ccc;
+}
+
+.overlay-container{
+  display: none;
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*display: flex;*/
+  flex-direction: column;
+}
+
+.close{
+  max-width: 25%;
+  padding: 10px 20px;
+}
+
+.small .overlay-content{
+  max-width: 500px;
+  /*flex: 1 1 500px;*/
+  max-height: 300px;
+  background-color: salmon;
+}
+
+.small{
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content{
+  flex: 1 1 0px;
+  padding: 20px;
+  /*Nesting flex for elements inside overlay-content*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.entry{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.two-column{
+  flex: 2 2 0px;
+}
+
+.column{
+  flex: 1 1 0px;
+}
+
+.more-info{
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
